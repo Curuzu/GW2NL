@@ -1,0 +1,92 @@
+body, header, a, nav, ul, li{
+margin: 0px;
+padding: 0%;
+list-style: none;
+text-decoration: none;
+}
+
+@font-face {
+    font-family: 'gw2-font';
+    src: url(GWTwoFont.ttf);
+}
+
+body{
+    background-color:beige;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: sans-serif;
+}
+.cabecalho{
+    text-align: center;
+    line-height: 50%;
+}
+
+.titulo{
+    font-family: 'gw2-font';
+}
+
+.subtitulo{
+    font-family: sans-serif;
+    font-size: smaller;
+}
+
+nav{
+    padding: 20px;
+    background-color:rgb(34, 31, 24);
+    flex-wrap: wrap;
+
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.botoes a{
+    color: aliceblue;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.introducao{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.paragrafo-intro{
+    font-size: larger;
+    text-align: justify;
+}
+
+/*container1
+    cont1-texto
+        p
+    cont1-imagens
+        img1,1
+        1mg1,2
+        img1,3
+        img1,4
+*/
+
+.container1{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    -ms-grid-row-align: end;
+}
+
+.cont1-texto{
+    font-size: larger;
+    text-align: justify;
+}
+
+.cont1-imagens{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  
+}
+
+.cont1-imagens img{
+    
+}
